@@ -17,5 +17,37 @@ użyj closure do przetworzenia listy inputs
 
  */"
 
+// Dane wejściowe (np. z formularza / XForms / BPMN)
+def inputs = [12, "OK", null, 3.14, "", false, "123"]
 
-def inputs = [12,"OK",null,3.14,false,"123"]
+// Closure klasyfikująca pojedynczą wartość
+def classify = { x ->
+    switch (x) {
+        case null:
+            "EMPTY"
+        case Number:
+            "NUMBER"
+        case String:
+            x.trim().isEmpty() ? "BLANK_STRING" : "TEXT"
+        default:
+            "OTHER"
+    }
+}
+
+// Przetworzenie listy danych
+def result = inputs.collect(classify)
+
+// Prezentacja wyniku
+println(result)
+
+// Kontrola poprawności
+assert result == [
+        "NUMBER",
+        "TEXT",
+        "EMPTY",
+        "NUMBER",
+        "BLANK_STRING",
+        "OTHER",
+        "TEXT"
+]
+
