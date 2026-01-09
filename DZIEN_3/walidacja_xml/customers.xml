@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+    <customer id="1" active="true">
+        <name>Anna Kowalska</name>
+        <email>anna.kowalska@example.com</email>
+    </customer>
+
+    <customer id="2" active="false">
+        <name>Piotr Nowak</name>
+        <email>piotr.nowak@example.com</email>
+    </customer>
+
+    <!-- celowo błędny rekord do testów -->
+    <customer id="-3" active="yes">
+        <name>   </name>
+        <email>zly-mail</email>
+    </customer>
+</customers>
