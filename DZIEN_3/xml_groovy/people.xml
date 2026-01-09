@@ -1,0 +1,17 @@
+<people>
+    <person>
+        <name>Marcin</name>
+        <age>52</age>
+        <city>Kraków</city>
+    </person>
+    <person>
+        <name>Ewa</name>
+        <age>48</age>
+        <city>Warszawa</city>
+    </person>
+    <person>
+        <name>Adam</name>
+        <age>30</age>
+        <city>Gdańsk</city>
+    </person>
+</people>
