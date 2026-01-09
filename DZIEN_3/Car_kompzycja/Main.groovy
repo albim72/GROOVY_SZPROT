@@ -1,12 +1,7 @@
-class Car {
-    String model
-    private Engine engine //silnik jest integralną częścią samochodu
-    Car(String model, int horsepower) {
-        this.model = model
-        this.engine = new Engine(horsepower)
-    }
+def carA = new Car("BMW M3",510)
+println(carA.info())
 
-    String info() {
-        "Samochód: ${model}, ${engine.info()}"
-    }
-}
+def carB = new Car("Toyota GR Yaris",110)
+println(carB.info())
+
+println("Czy silnik da się użyć bez auta? Nie, bo silnik jest ukryty i zarządzany przez Car!")
