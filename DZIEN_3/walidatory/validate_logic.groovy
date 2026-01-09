@@ -62,9 +62,9 @@ if (errors.isEmpty() && root != null) {
 // OUTPUT
 // =========================
 if (!errors.isEmpty()) {
-    System.err.println("❌ LOGIC VALIDATION FAILED (${errors.size()}):")
+    System.err.println("LOGIC VALIDATION FAILED (${errors.size()}):")
     errors.each { System.err.println(" - ${it}") }
     System.exit(2)
 }
 
-println("✅ LOGIC VALIDATION OK")
+println("LOGIC VALIDATION OK")
