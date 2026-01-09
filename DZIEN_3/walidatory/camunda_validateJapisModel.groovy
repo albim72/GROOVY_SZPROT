@@ -187,5 +187,9 @@ execution.setVariable("validationErrorsText", errors.join("\n"))
 execution.setVariable("validationStatus", ok ? "OK" : "FAILED: ${errors.size()} error(s)")
 
 if (!ok && throwOnError) {
-    throw new BpmnError("XML_VALIDATION_FAILED", errors.join(" | "))
+    throw new org.camunda.bpm.engine.delegate.BpmnError(
+        "XML_VALIDATION_FAILED",
+        errors.join(" | ")
+    )
 }
+
