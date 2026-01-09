@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Marcin",
+    "age": 52,
+    "city": "Kraków",
+    "hobbies": ["AI","Running","Mountains","Music"]
+  },
+  {
+    "name": "Ewa",
+    "age": 38,
+    "city": "Zamość",
+    "hobbies": ["Yoga","Cooking"]
+  },
+  {
+    "name": "Adam",
+    "age": 23,
+    "city": "Wrocław",
+    "hobbies": ["Guitar","Music"]
+  },
+  {
+    "name": "Roma",
+    "age": 31,
+    "city": "Poznań",
+    "hobbies": ["AI","Cooking","Pilates"]
+  }
+]
